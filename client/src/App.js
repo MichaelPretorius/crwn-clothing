@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import './App.css';
 import { auth, createUserProfileDocument } from './firebase/firebaseUtils';
 import HomePage from './pages/HomePage/HomePage';
 import ShopPage from './pages/ShopPage/ShopPage';
@@ -12,6 +11,7 @@ import SignInUpPage from './pages/SignInUpPage/SignInUpPage';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import { setCurrentUser } from './redux/user/userActions';
 import { selectCurrentUser } from './redux/user/userSelectors';
+import { GlobalStyle } from './globalStyles';
 
 const App = ({ setCurrentUser, currentUser }) => {
   useEffect(() => {
@@ -37,6 +37,7 @@ const App = ({ setCurrentUser, currentUser }) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />

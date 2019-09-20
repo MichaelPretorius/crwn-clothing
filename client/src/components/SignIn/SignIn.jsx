@@ -46,7 +46,7 @@ const SignIn = () => {
                     required
                     name="email"
                     type="email"
-                    label="email"
+                    label="Email"
                     value={userCredentials.email}
                     handleChange={handleChange}
                 />
@@ -54,7 +54,7 @@ const SignIn = () => {
                     required
                     name="password"
                     type="password"
-                    label="password"
+                    label="Password"
                     value={userCredentials.password}
                     handleChange={handleChange}
                 />
