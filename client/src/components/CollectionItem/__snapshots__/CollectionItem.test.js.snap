@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollectionItem should render CollectionItem component 1`] = `
+"<CollectionItemContainer>
+  <BackgroundImage className=\\"image\\" imageUrl=\\"www.testImage.com\\" />
+  <CollectionFooterContainer>
+    <NameContainer>
+      black hat
+    </NameContainer>
+    <PriceContainer>
+      R
+      10
+    </PriceContainer>
+  </CollectionFooterContainer>
+  <ButtonContainer inverted={true} onClick={[Function: onClick]}>
+    Add To Cart
+  </ButtonContainer>
+</CollectionItemContainer>"
+`;

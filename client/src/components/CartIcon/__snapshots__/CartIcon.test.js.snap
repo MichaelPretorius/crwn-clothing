@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartIcon should render CartIcon component 1`] = `
+"<CartIconContainer onClick={[Function: mockConstructor]}>
+  <Styled(Component) className=\\"shopping-icon\\" />
+  <ItemCountContainer>
+    0
+  </ItemCountContainer>
+</CartIconContainer>"
+`;

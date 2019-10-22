@@ -11,7 +11,7 @@ import {
   ButtonContainer
 } from './CollectionItem.styles';
 
-const CollectionItem = ({ item, addItem }) => {
+export const CollectionItem = ({ item, addItem }) => {
   const { name, imageUrl, price } = item;
 
   return (

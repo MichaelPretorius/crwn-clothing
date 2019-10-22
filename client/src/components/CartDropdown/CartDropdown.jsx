@@ -8,7 +8,7 @@ import CartItem from '../CartItem/CartItem';
 import { toggleCartHidden } from '../../redux/cart/cartActions';
 import { selectCartItems } from '../../redux/cart/cartSelectors';
 
-const CartDropdown = ({ cartItems, history, toggleCartHidden }) => {
+export const CartDropdown = ({ cartItems, history, toggleCartHidden }) => {
   return (
     <CartDropdownContainer>
       <CartItemsContainer>

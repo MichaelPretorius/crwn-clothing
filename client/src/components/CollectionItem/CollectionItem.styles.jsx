@@ -34,6 +34,7 @@ export const CollectionItemContainer = styled.div`
     }
   }
 `;
+CollectionItemContainer.displayName = 'CollectionItemContainer';
 
 export const BackgroundImage = styled.div`
   width: 100%;
@@ -43,6 +44,7 @@ export const BackgroundImage = styled.div`
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
+BackgroundImage.displayName = 'BackgroundImage';
 
 export const CollectionFooterContainer = styled.div`
   width: 100%;
@@ -51,16 +53,19 @@ export const CollectionFooterContainer = styled.div`
   justify-content: space-between;
   font-size: 18px;
 `;
+CollectionFooterContainer.displayName = 'CollectionFooterContainer';
 
 export const NameContainer = styled.span`
   width: 80%;
   margin-bottom: 15px;
 `;
+NameContainer.displayName = 'NameContainer';
 
 export const PriceContainer = styled.span`
   width: 20%;
   text-align: right;
 `;
+PriceContainer.displayName = 'PriceContainer';
 
 export const ButtonContainer = styled(CustomButton)`
   width: 80%;
@@ -76,3 +81,4 @@ export const ButtonContainer = styled(CustomButton)`
     padding: 0 10px; 
   }
 `;
+ButtonContainer.displayName = 'ButtonContainer';

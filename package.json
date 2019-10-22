@@ -27,6 +27,8 @@
     "stripe": "^7.9.0"
   },
   "devDependencies": {
-    "concurrently": "^4.1.2"
+    "concurrently": "^4.1.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1"
   }
 }

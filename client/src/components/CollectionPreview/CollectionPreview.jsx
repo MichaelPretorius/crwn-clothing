@@ -8,7 +8,7 @@ import {
   PreviewContainer
 } from './CollectionPreview.styles';
 
-const CollectionPreview = ({ title, items, history, match, routeName }) => {
+export const CollectionPreview = ({ title, items, history, match, routeName }) => {
   return (
     <CollectionPreviewContainer>
       <TitleContainer onClick={() => history.push(`${match.path}/${routeName}`)}>

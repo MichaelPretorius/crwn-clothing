@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { CheckoutItemContainer, ImageContainer, TextContainer, QuantityContainer, RemoveButtonContainer } from './CheckoutItem.styles';
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cartActions';
 
-const CheckoutItem = ({ cartItem, clearItemFromCart, addItem, removeItem }) => {
+export const CheckoutItem = ({ cartItem, clearItemFromCart, addItem, removeItem }) => {
   const { imageUrl, name, price, quantity } = cartItem;
 
   return (
@@ -16,11 +16,11 @@ const CheckoutItem = ({ cartItem, clearItemFromCart, addItem, removeItem }) => {
       <QuantityContainer>
         <div onClick={() => removeItem(cartItem)}>
           &#10094;
-                </div>
+        </div>
         <span>{quantity}</span>
         <div onClick={() => addItem(cartItem)}>
           &#10095;
-                </div>
+        </div>
       </QuantityContainer>
       <TextContainer>{price}</TextContainer>
       <RemoveButtonContainer onClick={() => clearItemFromCart(cartItem)}>

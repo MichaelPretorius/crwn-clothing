@@ -20,6 +20,8 @@ export const TitleContainer = styled.h1`
   }
 `;
 
+TitleContainer.displayName = 'TitleContainer';
+
 export const PreviewContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

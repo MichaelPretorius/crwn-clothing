@@ -6,7 +6,7 @@ import { CartIconContainer, ItemCountContainer, ShoppingIconContainer } from './
 import { toggleCartHidden } from '../../redux/cart/cartActions';
 import { selectCartItemsCount } from '../../redux/cart/cartSelectors';
 
-const CartIcon = ({ toggleCartHidden, itemCount }) => {
+export const CartIcon = ({ toggleCartHidden, itemCount }) => {
   return (
     <CartIconContainer onClick={toggleCartHidden}>
       <ShoppingIconContainer className="shopping-icon" />
