@@ -1,6 +1,6 @@
 import { ShopActionTypes } from './shopTypes';
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   collections: null,
   isFetching: false,
   errorMessage: undefined
