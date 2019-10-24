@@ -6,5 +6,4 @@ describe('CollectionsOverview', () => {
   test('should render CollectionsOverview component', () => {
     expect(shallow(<CollectionsOverview collections={[]} />).debug()).toMatchSnapshot();
   });
-  
 })

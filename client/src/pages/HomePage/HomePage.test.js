@@ -3,5 +3,5 @@ import { shallow } from 'enzyme';
 import HomePage from './HomePage';
 
 it('should render HomePage component', () => {
-  expect(shallow(<HomePage />)).toMatchSnapshot();
+  expect(shallow(<HomePage />).debug()).toMatchSnapshot();
 });

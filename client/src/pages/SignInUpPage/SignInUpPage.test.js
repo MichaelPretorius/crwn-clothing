@@ -3,5 +3,5 @@ import { shallow } from 'enzyme';
 import SignInUpPage from './SignInUpPage';
 
 it('should render SignInUpPage component', () => {
-  expect(shallow(<SignInUpPage />)).toMatchSnapshot();
+  expect(shallow(<SignInUpPage />).debug()).toMatchSnapshot();
 });

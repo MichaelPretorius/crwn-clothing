@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 
 import { CartDropdown } from './CartDropdown';
 import CartItem from '../CartItem/CartItem';
-import { toggleCartHidden } from '../../redux/cart/cartActions';
 
 describe('CartDropdown', () => {
   let wrapper;

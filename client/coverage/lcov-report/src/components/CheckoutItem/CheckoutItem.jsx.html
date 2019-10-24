@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>6/6</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -85,26 +85,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -118,26 +118,26 @@ import { connect } from 'react-redux';
 import { CheckoutItemContainer, ImageContainer, TextContainer, QuantityContainer, RemoveButtonContainer } from './CheckoutItem.styles';
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cartActions';
 &nbsp;
-const CheckoutItem = <span class="fstat-no" title="function not covered" >({</span> cartItem, clearItemFromCart, addItem, removeItem }) =&gt; {
-  const { imageUrl, name, price, quantity } = <span class="cstat-no" title="statement not covered" >cartItem;</span>
+export const CheckoutItem = ({ cartItem, clearItemFromCart, addItem, removeItem }) =&gt; {
+  const { imageUrl, name, price, quantity } = cartItem;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;CheckoutItemContainer&gt;
       &lt;ImageContainer&gt;
         &lt;img src={imageUrl} alt="item" /&gt;
       &lt;/ImageContainer&gt;
       &lt;TextContainer&gt;{name}&lt;/TextContainer&gt;
       &lt;QuantityContainer&gt;
-        &lt;div onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >removeItem(cartItem)}</span>&gt;
+        &lt;div onClick={() =&gt; removeItem(cartItem)}&gt;
           &amp;#10094;
-                &lt;/div&gt;
+        &lt;/div&gt;
         &lt;span&gt;{quantity}&lt;/span&gt;
-        &lt;div onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >addItem(cartItem)}</span>&gt;
+        &lt;div onClick={() =&gt; addItem(cartItem)}&gt;
           &amp;#10095;
-                &lt;/div&gt;
+        &lt;/div&gt;
       &lt;/QuantityContainer&gt;
       &lt;TextContainer&gt;{price}&lt;/TextContainer&gt;
-      &lt;RemoveButtonContainer onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >clearItemFromCart(cartItem)}</span>&gt;
+      &lt;RemoveButtonContainer onClick={() =&gt; clearItemFromCart(cartItem)}&gt;
         &amp;#10005;
             &lt;/RemoveButtonContainer&gt;
     &lt;/CheckoutItemContainer&gt;
@@ -151,7 +151,7 @@ export default connect(null, { clearItemFromCart, addItem, removeItem })(Checkou
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 22 2019 14:36:53 GMT+0200 (South Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 24 2019 22:53:23 GMT+0200 (South Africa Standard Time)
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>

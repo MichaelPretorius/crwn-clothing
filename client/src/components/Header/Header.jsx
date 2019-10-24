@@ -10,7 +10,7 @@ import CartDropdown from '../CartDropdown/CartDropdown';
 import { selectCurrentUser } from '../../redux/user/userSelectors';
 import { selectCartHidden } from '../../redux/cart/cartSelectors';
 
-const Header = ({ currentUser, hidden }) => {
+export const Header = ({ currentUser, hidden }) => {
   return (
     <HeaderContainer>
       <LogoContainer to="/">

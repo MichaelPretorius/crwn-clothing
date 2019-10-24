@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItem should render MenuItem component 1`] = `
+"<MenuItemContainer size=\\"large\\" onClick={[Function: onClick]}>
+  <BackgroundImageContainer className=\\"background-image\\" imageUrl=\\"testimage\\" />
+  <styled.div className=\\"content\\">
+    <styled.div>
+      HATS
+    </styled.div>
+    <styled.div>
+      SHOP NOW
+    </styled.div>
+  </styled.div>
+</MenuItemContainer>"
+`;
