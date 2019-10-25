@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">78.57% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/14</span>
+        <span class='fraction'>11/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">71.43% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/7</span>
+        <span class='fraction'>5/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">76.92% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/13</span>
+        <span class='fraction'>10/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,31 +82,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -114,31 +114,31 @@
 &nbsp;
 import { firestore, convertCollectionsSnapshotToMap } from '../../firebase/firebaseUtils';
 &nbsp;
-export const fetchCollectionsStart = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchCollectionsStart = () =&gt; {
+  return {
     type: ShopActionTypes.FETCH_COLLECTIONS_START,
   };
 };
 &nbsp;
-export const fetchCollectionsSuccess = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >co</span>llectionsMap =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchCollectionsSuccess = collectionsMap =&gt; {
+  return {
     type: ShopActionTypes.FETCH_COLLECTIONS_SUCCESS,
     payload: collectionsMap
   };
 };
 &nbsp;
-export const fetchCollectionsFailure = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >er</span>rorMessage =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return {</span>
+export const fetchCollectionsFailure = errorMessage =&gt; {
+  return {
     type: ShopActionTypes.FETCH_COLLECTIONS_FAILURE,
     payload: errorMessage
   };
 };
 &nbsp;
-export const fetchCollectionsStartAsync = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >di</span>spatch =&gt; {</span></span>
-  const collectionRef = <span class="cstat-no" title="statement not covered" >firestore.collection('collections');</span>
-<span class="cstat-no" title="statement not covered" >  dispatch(fetchCollectionsStart());</span>
+export const fetchCollectionsStartAsync = () =&gt; dispatch =&gt; {
+  const collectionRef = firestore.collection('collections');
+  dispatch(fetchCollectionsStart());
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  collectionRef.get().then(<span class="fstat-no" title="function not covered" >sn</span>apshot =&gt; {</span>
+  collectionRef.get().then(<span class="fstat-no" title="function not covered" >sn</span>apshot =&gt; {
     const collectionsMap = <span class="cstat-no" title="statement not covered" >convertCollectionsSnapshotToMap(snapshot);</span>
 <span class="cstat-no" title="statement not covered" >    dispatch(fetchCollectionsSuccess(collectionsMap));</span>
   }).catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >dispatch(fetchCollectionsFailure(err.message)))</span>;
@@ -148,7 +148,7 @@ export const fetchCollectionsStartAsync = <span class="cstat-no" title="statemen
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 24 2019 22:53:23 GMT+0200 (South Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Oct 25 2019 09:56:02 GMT+0200 (South Africa Standard Time)
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
